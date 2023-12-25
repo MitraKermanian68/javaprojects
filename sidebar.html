@@ -4,20 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>sidebar</title>
+    <link rel="stylesheet" href="./style2.css" />
     <script
       src="https://kit.fontawesome.com/9bf81300c6.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <nav>
-      <div class="nav-center">
-        <div class="nav-header">
+    <main>
+      <button class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <aside class="sidebar">
+        <div class="sideba-header">
           <img src="./Proton_AG_logo.svg.svg" class="logo" alt="logo" />
-          <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
+          <button class="close-btn">
+            <i class="fas fa-times"></i>
           </button>
         </div>
         <ul class="links">
@@ -51,8 +55,8 @@
             </a>
           </li>
         </ul>
-      </div>
-    </nav>
-    <script src="./app.js"></script>
+      </aside>
+    </main>
+    <script src="./main.js"></script>
   </body>
 </html>

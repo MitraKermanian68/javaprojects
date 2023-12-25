@@ -1,27 +1,16 @@
-let count = 0;
+//classList => show/gets all classes
+//contains => check classList for specific class
+//add => add class
+//remove => remove class
+//toggle => toggle class
+const navToggle = document.querySelector(".nav-toggle");
+const links = document.querySelector(".links");
 
-const btns = document.querySelectorAll(".btn");
-const value = document.querySelector("#value");
-
-btns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    const styles = e.currentTarget.classList;
-    if (styles.contains("decrease")) {
-      count--;
-    } else if (styles.contains("increase")) {
-      count++;
-    } else {
-      count = 0;
-    }
-    if (count > 0) {
-      value.style.color = "green";
-    }
-    if (count < 0) {
-      value.style.color = "red";
-    }
-    if (count == 0) {
-      value.style.color = "black";
-    }
-    value.textContent = count;
-  });
+navToggle.addEventListener("click", function () {
+  //  if (links.classList.contains("show-links")) {
+  //   links.classList.remove("show-links");
+  // } else {
+  //   links.classList.add("show-links");
+  // }
+  links.classList.toggle("show-links");
 });
