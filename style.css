@@ -6,70 +6,91 @@
     border: none;
     transition: all ease 300ms;
     scroll-behavior: smooth;
-    text-decoration: none;
-    list-style: none;
-}
-.links{
-    height: 0;
-    overflow: hidden;
 }
 
-.show-links {
-    height: 10rem;
-}
-
-nav{
-    background-color: rgba(127, 255, 212, 0.322);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.211);
-}
-
-i{
-    color: black;
-}
-
-a{
-    color: black;
-}
-.social-media{
-    display: none;
-}
-
-
-.nav-center {
+.container {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    height: 100vh;
 }
 
-.nav-center .nav-header {
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: rgba(127, 255, 212, 0.379);
+}
+
+.title .underline{
+    border: 2px solid rgb(1, 136, 91);
+    margin-top: 10px;
+    width: 50px
+}
+
+.container .review{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1rem 2rem;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-direction: column;
+    margin: 20px auto;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.196);
+    width: 40rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: aliceblue;
 }
 
-.nav-center .nav-header .nav-toggle{
-    width: 2rem;
-    height: 2rem;
+.container .review .img-contaoner {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
 }
 
-.nav-center .nav-header .nav-toggle i{
+.container .review .img-contaoner img {
     width: 100%;
     height: 100%;
-    font-size: 30px;
+
+}
+.container .review p{
+    text-align: center;
+}
+.btn {
+    padding: 0.5rem 2rem;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0, 196, 130);
+    color: rgb(0, 196, 130);
     cursor: pointer;
-    background-color:  rgba(127, 255, 212, 0.322);
+}
+.btn:hover {
+    background-color: rgb(0, 0, 0,0.5);
 }
 
-.nav-center .nav-header .nav-toggle i:hover{
-    transform: rotate(90deg);
+.buttons-container {
+    display: flex;
+    gap: 1rem;
 }
 
-.nav-center .nav-header img {
-    width: 5rem;
+.buttons-container .prev-btn{
+    background-color: transparent;
+}
+
+.buttons-container .prev-btn i{
+    color: aqua;
+    cursor: pointer;
+}
+.buttons-container .next-btn i{
+    color: aqua;
     cursor: pointer;
 }
 
-
+#job {
+    color: rgb(0, 184, 184);
+}

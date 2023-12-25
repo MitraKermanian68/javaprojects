@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
+    <title>Review</title>
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/9bf81300c6.js"
@@ -12,47 +12,35 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <div class="nav-center">
-        <div class="nav-header">
-          <img src="./Proton_AG_logo.svg.svg" class="logo" alt="logo" />
-          <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
+    <main>
+      <section class="container">
+        <div class="title">
+          <h2>our reviews</h2>
+          <div class="underline"></div>
         </div>
-        <ul class="links">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">about</a>
-          </li>
-          <li>
-            <a href="#">projects</a>
-          </li>
-          <li>
-            <a href="#">contact</a>
-          </li>
-        </ul>
-        <ul class="social-media">
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <article class="review">
+          <div class="img-contaoner">
+            <img src="./3135768.png" id="person-img" alt="" />
+          </div>
+          <h4 id="author">Sara Jones</h4>
+          <p id="job">ux designer</p>
+          <p id="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            quidem sunt quaerat, iusto aperiam suscipit quae fugit tempore sit
+            natus quas labore, aliquid at, nulla minima cum quo sed cumque!
+          </p>
+          <div class="buttons-container">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <button class="btn random-btn">surprise me</button>
+        </article>
+      </section>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>
